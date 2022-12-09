@@ -7,13 +7,13 @@ import { create as ipfsHttpClient } from "ipfs-http-client";
 
 // const client = ipfsHttpClient("https://ipfs.infura.io:5001/api/v0");
 
-const projectId = process.env.PROJECT_ID;
-const projectSecretKey = process.env.PROJECT_SECRET_KEY;
+const projectId = "2Ig0yButPcAHYMnDYOKC0KSCIVN";
+const projectSecretKey = "419a0a5e0c0c7e2b0c7bdbecc339ca75";
 const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
   "base64"
 )}`;
 
-const subdomain = process.env.SUBDOMAIN;
+const subdomain = "https://welkin-nfts-marketplace.infura-ipfs.io";
 
 const client = ipfsHttpClient({
   host: "infura-ipfs.io",
